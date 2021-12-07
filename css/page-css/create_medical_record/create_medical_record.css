@@ -1,0 +1,77 @@
+
+.page-content{
+    width: 100%;
+    background: #f1f4f6;
+    padding:40px 0;
+}
+.create-medical-record-form{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px 20px 40px;
+    border: 1px solid #cdd8ea;
+}
+.form-heading{
+    font-weight: 700;
+    color: #4d4d4d;
+    margin-bottom: 16px;
+    font-size: 24px;
+    text-align: center;
+}
+.line-down{
+    width: 84px;
+    height: 3px;
+    background-color: #307be7;
+    border-radius: 6px;
+    margin: 0 auto;
+}
+.form-content{
+    width: 680px;
+    margin: 30px auto;
+}
+.form-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 10px 0;
+}
+.form-label{
+    margin-bottom: 5px;
+    padding: 0 5px;
+    font-weight: 300;
+    color: #4d4d4d;
+    width: 140px;
+}
+.form-input{
+    outline:none;
+    border: 1px solid #D7DCE0;
+    border-radius: 3px;
+    padding: 8px 10px;
+    width: 480px;
+}
+.form-message{
+    position: absolute;
+    left: 200px;
+    bottom:-9px;
+    font-size: 12px;
+    color: #f62c2c;
+}
+.form-submit{
+    text-align: center;
+    padding-top: 30px;
+}
+.btn-submit{
+    width: 340px;
+    background: #307be7;
+    border: 1px solid #307be7;
+    padding: 5px 0;
+    color: #fff;
+    transition: all 0.3s;
+    font-weight: 700;
+}
+.btn-submit:hover{
+    opacity: 0.8;
+    transform: translateY(-2px);
+}

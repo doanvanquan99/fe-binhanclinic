@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <!--library  -->
+    <link rel="stylesheet" href="./library/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./library/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./font/font-style.css">
+    <!-- common css -->
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/header/header.css">
+    <link rel="stylesheet" href="/css/footer/footer.css">
+    <!-- page-css -->
+    <link rel="stylesheet" href="./css/page-css/create_medical_record/create_medical_record.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="container-header">
+        <div class="nav-top">
+            <ul class="nav-list">
+                <li class="nav-link">
+                    <i class="fas fa-phone-volume"></i>
+                    <a href="">Hỗ trợ chuyên môn</a>
+                </li>
+                <li class="nav-link">
+                    <i class="fas fa-phone-volume"></i>
+                    <a href="">Hỗ trợ kỹ thuật</a>
+                </li>
+                <!--                 <li class="nav-link">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <a href="./login.html">Đăng nhập</a>
+                </li>
+                <li class="nav-link">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <a href="./register.html">Đăng ký</a>
+                </li> -->
+                <li class="nav-link nav-user" id="nav-user">
+                    <i class="fas fa-user"></i>
+                    <span>Thông tin tài khoản</span>
+                    <ul class="nav-dropdown" id="nav-dropdown">
+                        <li class="nav-dropdown-item">
+                            <b>Xin chào!</b>
+                            <br>
+                            Đoàn Quân
+                        </li>
+                        <li class="nav-dropdown-item">
+                            Hồ sơ bệnh nhân
+                        </li>
+                        <li class="nav-dropdown-item">
+                            Phiếu khám bệnh
+                        </li>
+                        <li class="nav-dropdown-item">
+                            <i class="fas fa-sign-in-alt"></i>
+                            Đăng xuất
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-menu">
+            <div class="nav-logo">
+                <a href="">
+                    <img src="./image/logo.png" alt="">
+                </a>
+                <div class="nav-logo-info">
+                    <h3 class="name">Phòng khám Bình An</h3>
+                    <p class="slogan">Tiên Phong-Thấu Hiểu-Chuẩn Mực-An Toàn</p>
+                </div>
+            </div>
+            <ul class="nav-menu-list">
+                <li class="nav-menu-list-item active"><a href="./index.html">TRANG CHỦ</a></li>
+                <li class="nav-menu-list-item"><a href="">GIỚI THIỆU</a></li>
+                <li class="nav-menu-list-item"><a href="">QUY TRÌNH</a></li>
+                <li class="nav-menu-list-item"><a href="./list_notifications.html">THÔNG BÁO</a></li>
+                <li class="nav-menu-list-item"><a href="">THẮC MẮC</a></li>
+                <li class="nav-menu-list-item"><a href="">LIÊN HỆ</a></li>
+            </ul>
+        </div>
+    </header>
+    <ul class="breadcrumbs">
+        <li class="breadcrumb-item"><a href="./index.html">Trang chủ</a></li>
+        <li class="breadcrumb-item active"><a href="#">Tạo hồ sơ bệnh án</a></li>
+    </ul>
+    <!-- content -->
+    <div class="page-content">
+        <form action="" class="create-medical-record-form">
+            <h3 class="form-heading">TẠO HỒ SƠ BỆNH NHÂN</h3>
+            <div class="line-down"></div>
+            <div class="form-content">
+                <div class="form-group">
+                    <label for="txtFullName" class="form-label">Họ và tên :</label>
+                    <input type="text" class="form-input" id="txtFullName"
+                        placeholder="Vui lòng nhập họ và tên (Có dấu)">
+                    <span class="form-message" id="messageFullName">(*)</span>
+                </div>
+                <div class="form-group">
+                    <label for="txtNumberPhone" class="form-label">Số điện thoại :</label>
+                    <input type="text" class="form-input" id="txtNumberPhone" placeholder="Vui lòng nhập số điện thoại">
+                    <span class="form-message" id="messageNumberPhone">(*)</span>
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label">Ngày sinh :</label>
+                    <input type="date" class="form-input" id="txtDateOfBirth">
+                    <input type="hidden" class="form-input" id="txtDateOfBirthValue">
+                    <span class="form-message" id="messageDateOfBirth">(*)</span>
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label">Giới tính :</label>
+                    <select class="form-input" id="selectGender">
+                        <option value="">Chọn giới tính</option>
+                        <option value="male">Nam</option>
+                        <option value="female">Nữ</option>
+                    </select>
+                    <span class="form-message" id="messageGender">(*)</span>
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label">Số CMND :</label>
+                    <input type="text" id="txtCMND" class="form-input" placeholder="Vui lòng nhập số CMND">
+                    <span class="form-message" id="messageCMND">(*)</span>
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label">Địa chỉ :</label>
+                    <input type="text" class="form-input" id="txtAddress" placeholder="Vui lòng nhập địa chỉ">
+                    <span class="form-message" id="messageAddress">(*)</span>
+                </div>
+                <div class="form-submit">
+                    <button type="submit" class="btn-submit" id="addMedicalRecord">XÁC NHẬN</button>
+                </div>
+            </div>
+        </form>
+        <div id="modalNotifi" class="modal fade" role="dialog">
+            <div class="modal-dialog form-modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="text-center text-danger">
+                            <i class="fas fa-exclamation-circle"></i>
+                            Tài khoản đã tồn tại
+                        </h4>
+                    </div>
+                    <div class="modal-footer text-center">
+                        <a href="" class="back-to-list">
+                            <i class="fas fa-link"></i>
+                            Quay lại trang danh sách</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="container-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="./image/logo.png" alt="">
+                <div class="footer-logo-info">
+                    <h3 class="name">Phòng khám Bình An</h3>
+                    <p>Địa chỉ: Đại Học Công Nghiệp TP.HCM</p>
+                    <p>SĐT:0123456789</p>
+                </div>
+            </div>
+            <ul class="footer-menu-list">
+                <li class="footer-list-item"><a href="">Trang chủ</a></li>
+                <li class="footer-list-item"><a href="">Giới thiệu</a></li>
+                <li class="footer-list-item"><a href="">Quy trình</a></li>
+                <li class="footer-list-item"><a href="">Thông báo</a></li>
+                <li class="footer-list-item"><a href="">Thắc mắc</a></li>
+                <li class="footer-list-item"><a href="">Liên hệ</a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+    <!-- library -->
+    <script src="./library/jquery/jquery.min.js"></script>
+    <script src="./library/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- page js -->
+    <script src="./js/pageCommon/global.js"></script>
+    <script src="./js/pageComponent/create_medical_record/create_medical_record.js"></script>
+
+    <script>
+        $("#modalNotifi").modal();
+    </script>
+</body>
+
+</html>

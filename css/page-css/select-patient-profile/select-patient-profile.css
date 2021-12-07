@@ -1,0 +1,100 @@
+
+.page-content{
+    width: 100%;
+    background: #f1f4f6;
+    padding:40px 0;
+}
+.select-patient-profile-container{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px 20px 40px;
+    border: 1px solid #cdd8ea;
+}
+.form-heading{
+    font-weight: 700;
+    color: #4d4d4d;
+    margin-bottom: 16px;
+    font-size: 24px;
+    text-align: center;
+}
+.line-down{
+    width: 84px;
+    height: 3px;
+    background-color: #307be7;
+    border-radius: 6px;
+    margin: 0 auto;
+}
+.patient-profile-box{
+    width: 500px;
+    margin: 40px auto;
+    padding: 20px 30px;
+    border: 1px dashed #307be7;
+    position: relative;
+    height: 118px;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+}
+.patient-profile-box.active{
+    height: 296px;
+}
+.btn-choose{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 14px;
+    padding: 4px;
+    cursor: pointer;
+}
+.patient-profile-box.active .title,
+.patient-profile-box.active .btn-choose{
+    color:var(--primary-color)
+}
+.btn-choose:hover{
+    opacity: 0.8;
+}
+.patient-profile-box .title{
+    font-size: 14px;
+    color: #4d4d4d;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+.patient-profile-box .info{
+    font-size: 14px;
+    color: #4d4d4d;
+    margin-bottom: 8px;
+}
+.btn-box{
+    margin-top: 30px;
+    padding: 10px 0;
+    text-align: right;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+.btn-register{
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 50px;
+    font-weight: bold;
+    color: #fff;
+    background: #307be7;
+    font-size: 15px
+}
+.btn-register:hover{
+    text-decoration: none;
+    color:#fff;
+    opacity: 0.8;
+}
+.for-another-patient-box{
+    display: block;
+    color: var(--text-color);
+    font-size: 14px;
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+    border: 1px dashed #307be7;
+    padding: 10px;
+    text-decoration: none
+}

@@ -1,0 +1,70 @@
+.container-notification{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #cce5ff;
+    padding: 12px 20px;
+
+}
+.notification-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #9fcdff;;
+}
+.notification-title .title{ 
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--primary-color);
+    margin-bottom: 0;
+}
+.notification-title .btn-close{
+    font-size: 24px;
+    cursor: pointer;
+}
+.notification-content{
+    margin-top: 10px;
+    color: var(--primary-color);
+}
+.notification-content p{
+    display:-webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+.container-doctor-appointment{
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px 0;
+    margin: 0 auto;
+    position: relative;
+}
+.container-doctor-appointment .banner{
+    width: 100%;
+}
+.doctor-appointment-box{
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    bottom: 10px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.doctor-appointment-box .btn-register{
+    padding: 10px 30px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #fff;
+    background-color: var(--primary-color);
+    margin:0 auto;
+    cursor: pointer;
+    text-decoration: none;
+}
+.doctor-appointment-box .btn-register:hover{
+    background-color:rgba(255, 255, 255, 0.6);
+    color: var(--primary-color);
+    transition: all .3s ease-in-out;
+}

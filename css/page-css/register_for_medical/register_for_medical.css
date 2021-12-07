@@ -1,0 +1,159 @@
+.page-content{
+    padding: 30px 0;
+}
+.form-register-container .form-heading{
+    padding:30px;
+    color: #27519e;
+    font-size: 1.75rem;
+    font-weight: 900;
+    text-align: center;
+}
+.form-content{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.section-note{
+    width: 30%;
+    background-image:url(/image/background_form_note_register_medical.png);
+    border: 1px solid #6bc0e7;
+    border-right: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 730px;
+    padding: 30px;
+    color: #fff;
+}
+.section-note p {
+    font-size: 16px;
+    font-weight: 600;
+}
+.info-patient{
+    background-color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+}
+.info-patient .title{
+    font-size: 14px;
+    color: #4d4d4d;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.info-patient .info{
+    font-size: 14px;
+    color: #4d4d4d;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+.section-form{
+    width: 70%;
+    padding: 30px 10px 30px 30px;
+    border: 1px solid #6bc0e7;
+    border-left: none;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.form-title-container{
+    padding-bottom: 15px;
+}
+.date-description{
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.section-form .form-title{
+    color: #27519e;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.form-note{
+    color: var(--primary-color);
+    font-size: 15px;
+    margin-top: 8px;
+}
+.form-group{
+    display: flex;
+}
+.form-input{
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    background: hsla(0,0%,100%,.5);
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 40px;
+    color: #333;
+    font-size: 14px;
+    outline: none;
+    width:728px;
+    margin: 0 4px;
+}
+
+.form-btn{
+    display: flex;
+    justify-content: right;
+    padding-right: 60px;
+    margin: 40px 0;
+}
+.btn-register{
+    border: none;
+    border-radius: 25px;
+    background-color: #6bc0e7;
+    padding: 0 50px;
+    height: 40px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+#datepicker{
+    margin: 0 4px;
+}
+.ui-widget.ui-widget-content{
+    width: 726px;
+}
+.form-btn,
+.symptom,
+.choose-department,
+.choose-session
+{
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+}
+.form-text-area{
+    height: 82px;
+}
+.symptom.open{
+    height: 82px;
+}
+.form-btn.open,
+.choose-session.open,
+.choose-department.open{
+    height: 40px;
+}
+.confirm-heading{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center  ;
+    width: 100%;
+    margin-bottom: 0;
+}
+.modal-confirm-body{
+    padding: 20px 30px;
+}
+.confirm-info{
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #4d4d4d;
+}
+#message{
+    font-size: 13px;
+}

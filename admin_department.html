@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./library/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./library/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./font/font-style.css">
+    <!-- common css -->
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/page-css/admin/header.css">
+
+    <link rel="stylesheet" href="./css/page-css/admin/admin.css">
+    <title>admin_home</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header_container"> 
+        <div class="header_logo">
+            <i class="fas fa-users-cog"></i>
+            <p class="admin_page_heading">TRANG QUẢN TRỊ</p>
+        </div>
+        <div class="header_user" id="headerUser">
+            <span class="header_user_name">Xin chào, Admin</span>
+            <i class="fas fa-caret-down"></i>
+            <ul class="user_dropdown">
+                <li>
+                    <a href="">
+                        <i class="fas fa-user"></i>
+                        Hồ sơ
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fas fa-power-off"></i>
+                        Đăng xuất
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div class="sidebar-container">
+            <ul class="nav-list">
+                <li class="nav-list-item">
+                    <div class="nav-list-wrapper">
+                        <div class="nav-list-name">
+                            <i class="fas fa-list"></i>
+                            <span>Quản lý tài khoản</span>
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="submenu">
+                        <li class="submenu-list-item">
+                            <a href="./admin_list_account.html">Quản lý tài khoản</a>
+                        </li>
+                        <li class="submenu-list-item">
+                            <span>Quản lý tài khoản</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-list-item">
+                    <div class="nav-list-wrapper">
+                        <div class="nav-list-name">
+                            <i class="fas fa-list"></i>
+                            <span>Quản lý tài khoản</span>
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="submenu">
+                        <li class="submenu-list-item">
+                            <a href="./admin_list_account.html">Quản lý tài khoản</a>
+                        </li>
+                        <li class="submenu-list-item">
+                            <span>Quản lý tài khoản</span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="page-content">
+                <ul class="breadcrumb">
+                    <li>
+                        <i class="ace-icon fa fa-home home-icon"></i>
+                        <a href="#">Trang chủ</a>
+                    </li>
+                    <li class="active">Trang chủ</li>
+                </ul>
+                <div class="page-department">
+                    <h4 class="text-center mb-3">THÔNG TIN KHOA</h4>
+
+                    <div class="form-group">
+                        <label class="text-primary">Xem danh sách bác sĩ theo khoa:</label>
+                        <select class="form-control" id="department">
+                        </select>
+                    </div>
+                    <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th class="col-2">STT</th>
+                            <th>Họ và tên</th>
+                          </tr>
+                        </thead>
+                        <tbody id="tb-department-body">
+                        </tbody>
+                      </table>
+                </div>
+        </div>
+    </div>
+    <!-- library -->
+    <script src="./library/jquery/jquery.min.js"></script>
+    <!-- page js -->
+    <script src="./js/pageComponent/admin/admin.js"></script>
+    <script src="./js/pageComponent/department/department.js"></script>
+</body>
+</html>

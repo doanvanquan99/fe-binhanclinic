@@ -1,0 +1,82 @@
+.page-content {
+    width: 100%;
+    min-height: 490px;
+    background: #f1f4f6;
+}
+
+.user-profile-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px 10px;
+    display: flex;
+}
+
+.user-profile-container .section-menu {
+    width: 20%;
+    padding-right: 30px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.user-profile-container .name-user {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.user-profile-container .menu-list-item>a {
+    display: block;
+    font-size: 14px;
+    color: #4d4d4d;
+    padding: 8px 6px;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.user-profile-container .menu-list-item .icon-right::before {
+    display: none;
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    right: 8px;
+}
+
+.user-profile-container .menu-list-item:hover>a {
+    background: #e4e7eb;
+    color: #307be7;
+}
+
+.user-profile-container .menu-list-item:hover .icon-right::before {
+    display: block;
+}
+.user-profile-container .section-notifications {
+    width: 75%;
+    padding: 0 20px;
+}
+.notification-heading{
+    padding: 15px 0; 
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+.notification-content{
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px 0;
+}
+.notification-content .title{
+    font-style: italic;
+    font-size: 14px;
+    border-bottom: 1px solid #307be7;
+    padding-bottom: 5px;
+}
+.notification-content .text{
+    font-size: 14px;
+}   

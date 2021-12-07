@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <!--library  -->
+    <link rel="stylesheet" href="./library/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./library/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./font/font-style.css">
+    <!-- common css -->
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/header/header.css">
+    <link rel="stylesheet" href="/css/footer/footer.css">
+    <!-- page-css -->
+    <link rel="stylesheet" href="./css/page-css/homepage/homepage.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="container-header">
+        <div class="nav-top">
+            <ul class="nav-list">
+                <li class="nav-link">
+                    <i class="fas fa-phone-volume"></i>
+                    <a href="">Hỗ trợ chuyên môn</a>
+                </li>
+                <li class="nav-link">
+                    <i class="fas fa-phone-volume"></i>
+                    <a href="">Hỗ trợ kỹ thuật</a>
+                </li>
+<!--                 <li class="nav-link">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <a href="./login.html">Đăng nhập</a>
+                </li>
+                <li class="nav-link">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <a href="./register.html">Đăng ký</a>
+                </li> -->
+                <li class="nav-link nav-user" id="nav-user">
+                    <i class="fas fa-user"></i>
+                    <span>Thông tin tài khoản</span>
+                    <ul class="nav-dropdown" id="nav-dropdown">
+                        <li class="nav-dropdown-item">
+                            <b>Xin chào!</b>
+                            <br> 
+                            Đoàn Quân
+                        </li>
+                        <li class="nav-dropdown-item">
+                            Hồ sơ bệnh nhân
+                        </li>
+                        <li class="nav-dropdown-item">
+                            Phiếu khám bệnh
+                        </li>
+                        <li class="nav-dropdown-item">
+                            <i class="fas fa-sign-in-alt"></i>
+                            Đăng xuất
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-menu">
+            <div class="nav-logo">
+                <a href="">
+                    <img src="./image/logo.png" alt="">
+                </a>
+                <div class="nav-logo-info">
+                    <h3 class="name">Phòng khám Bình An</h3>
+                    <p class="slogan">Tiên Phong-Thấu Hiểu-Chuẩn Mực-An Toàn</p>
+                </div>
+            </div>
+            <ul class="nav-menu-list">
+                <li class="nav-menu-list-item active"><a href="">TRANG CHỦ</a></li>
+                <li class="nav-menu-list-item"><a href="">GIỚI THIỆU</a></li>
+                <li class="nav-menu-list-item"><a href="">QUY TRÌNH</a></li>
+                <li class="nav-menu-list-item"><a href="./list_notifications.html">THÔNG BÁO</a></li>
+                <li class="nav-menu-list-item"><a href="">THẮC MẮC</a></li>
+                <li class="nav-menu-list-item"><a href="">LIÊN HỆ</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- content -->
+    <div class="container-notification">
+        <div class="notification-title">
+            <p class="title">Thông báo !</p>
+            <span class="btn-close" id="closeNotifi">&times;</span>
+        </div>
+        <div class="notification-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sint harum molestiae pariatur corporis
+                sunt, ipsam, quisquam odit laudantium voluptate numquam reiciendis modi aliquid optio expedita
+                blanditiis velit consequuntur laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea,
+                molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi libero magnam animi?
+                Perspiciatis totam architecto sed adipisci quae possimus impedit! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Porro, beatae.</p>
+        </div>
+    </div>
+    <div class="container-doctor-appointment">
+        <img src="./image/homepage/banner.jpg" alt="banner" class="banner">
+        <div class="doctor-appointment-box">
+            <div>
+                <a href="./register_for_medical.html" class="btn-register">ĐĂNG KÝ KHÁM BỆNH</a>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="container-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="./image/logo.png" alt="">
+                <div class="footer-logo-info">
+                    <h3 class="name">Phòng khám Bình An</h3>
+                    <p>Địa chỉ: Đại Học Công Nghiệp TP.HCM</p>
+                    <p>SĐT:0123456789</p>
+                </div>
+            </div>
+            <ul class="footer-menu-list">
+                <li class="footer-list-item"><a href="">Trang chủ</a></li>
+                <li class="footer-list-item"><a href="">Giới thiệu</a></li>
+                <li class="footer-list-item"><a href="">Quy trình</a></li>
+                <li class="footer-list-item"><a href="">Thông báo</a></li>
+                <li class="footer-list-item"><a href="">Thắc mắc</a></li>
+                <li class="footer-list-item"><a href="">Liên hệ</a></li>
+            </ul>
+        </div>
+    
+    </footer>
+
+    <!-- library -->
+    <script src="./library/jquery/jquery.min.js"></script>
+    <script src="./library/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- page js -->
+    <script src="./js/pageCommon/global.js"></script>
+    <script src="./js/pageComponent/homepage/homepage.js"></script>
+</body>
+
+</html>

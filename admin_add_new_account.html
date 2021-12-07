@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./library/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./library/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./font/font-style.css">
+    <!-- common css -->
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/page-css/admin/header.css">
+
+    <link rel="stylesheet" href="./css/page-css/admin/admin.css">
+    <title>Thêm tài khoản</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header_container">
+        <div class="header_logo">
+            <i class="fas fa-users-cog"></i>
+            <p class="admin_page_heading">TRANG QUẢN TRỊ</p>
+        </div>
+        <div class="header_user" id="headerUser">
+            <span class="header_user_name">Xin chào, Admin</span>
+            <i class="fas fa-caret-down"></i>
+            <ul class="user_dropdown">
+                <li>
+                    <a href="">
+                        <i class="fas fa-user"></i>
+                        Hồ sơ
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fas fa-power-off"></i>
+                        Đăng xuất
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div class="sidebar-container">
+            <ul class="nav-list">
+                <li class="nav-list-item">
+                    <div class="nav-list-wrapper">
+                        <div class="nav-list-name">
+                            <i class="fas fa-list"></i>
+                            <span>Quản lý tài khoản</span>
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="submenu">
+                        <li class="submenu-list-item">
+                            <a href="./admin_list_account.html">Quản lý tài khoản</a>
+                        </li>
+                        <li class="submenu-list-item">
+                            <span>Quản lý tài khoản</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-list-item">
+                    <div class="nav-list-wrapper">
+                        <div class="nav-list-name">
+                            <i class="fas fa-list"></i>
+                            <span>Quản lý tài khoản</span>
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="submenu">
+                        <li class="submenu-list-item">
+                            <a href="./admin_list_account.html">Quản lý tài khoản</a>
+                        </li>
+                        <li class="submenu-list-item">
+                            <span>Quản lý tài khoản</span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="page-content">
+            <ul class="breadcrumb">
+                <li>
+                    <i class="ace-icon fa fa-home home-icon"></i>
+                    <a href="#">Trang chủ</a>
+                </li>
+                <li class="active">Trang chủ</li>
+            </ul>
+            <div class="container">
+                <form id="formSubmit">
+                    <h3 class="mb-3 text-center">THÊM TÀI KHOẢN</h3>
+                    <div class="form-group row pt-3">
+                        <label for="" class="col-sm-2 col-form-label">Phân quyền</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" id="selectPermission">
+                                <option value="">Phân quyền</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option value="DOCTOR">Bác sĩ</option>
+                                <option>5</option>
+                            </select>
+                            <small id="selectPermissionHelp" class="text-danger">
+                                (*)
+                            </small>
+                        </div>
+                    </div>
+                    <div class="form-group row selectDepartment" id="boxSelectDepartment">
+                        <label for="" class="col-sm-2 col-form-label">Chọn khoa</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" id="selectDepartment">
+                                <option value="">Chọn khoa</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                            <small id="selectDepartmentHelp" class="text-danger">
+                                (*)
+                            </small>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="txtUserName" class="col-sm-2 col-form-label">Tên tài khoản</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="txtUserName" placeholder="6 - 32 ký tự (Chữ cái và số không cách)">     
+                                <small id="usernameHelp" class="text-danger">
+                                 (*)
+                                </small>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="txtPassword" class="col-sm-2 col-form-label">Mật khẩu</label>
+                        <div class="col-sm-10">
+                            <input type="password" id="txtPassword" class="form-control" placeholder="6 - 32 ký tự (Không chưa dấu cách)">
+                            <small id="passwordHelp" class="text-danger">
+                                (*)
+                            </small>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="confirmPassword" class="col-sm-2 col-form-label">Nhập lại mật khẩu</label>
+                        <div class="col-sm-10">
+                            <input type="password" id="confirmPassword" class="form-control" placeholder="Không để trống">
+                            <small id="confirmPasswordHelp" class="text-danger">
+                                (*)
+                            </small>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="txtFullName" class="col-sm-2 col-form-label">Họ và tên</label>
+                        <div class="col-sm-10">
+                            <input type="password" id="txtFullName" class="form-control" placeholder="Không để trống">
+                            <small id="fullNameHelp" class="text-danger">
+                                (*)
+                            </small>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="" class="col-sm-2 col-form-label">Số điện thoại</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="txtNumberPhone" placeholder="Không để trống">
+                            <small id="numberPhoneHelp" class="text-danger">
+                                (*)
+                            </small>
+                        </div>
+                    </div>
+                    <div class="form-group row text-center">
+                        <div class="col-sm-12 ">
+                            <button type="button" class="btn btn-primary" id="addAccount">Thêm tài khoản</button>
+                        </div>
+                    </div>
+                </form>
+                <div id="modalNotifi" class="modal fade" role="dialog">
+                    <div class="modal-dialog form-modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-body">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="text-center text-danger">
+                            <i class="fas fa-exclamation-circle"></i> 
+                           Tài khoản đã tồn tại</h4>
+                        </div>
+                        <div class="modal-footer text-center">
+                            <a href="" class="back-to-list">
+                                <i class="fas fa-link"></i>
+                                Quay lại trang danh sách</a>
+                        </div>
+                      </div>
+                  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- library -->
+    <script src="./library/jquery/jquery.min.js"></script>
+    <script src ="./library/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- page js -->
+    <script src="./js/pageCommon/global.js"></script>
+    <script src="./js/pageComponent/admin/admin.js"></script>
+    <script src="./js/pageComponent/admin/addAccount.js"></script>
+<!--     <script>
+        $("#modalNotifi").modal();
+    </script> -->
+</body>
+
+</html>

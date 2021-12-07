@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="date" name="" id="date">
+    <button id="btn">click here</button>
+<script>
+    var date = document.getElementById("date");
+    var today = new Date()
+    var priorDate = new Date()
+    priorDate.setDate(today.getDate() + 30)
+    console.log(priorDate)
+
+    date.setAttribute("min",new Date())
+    var btn = document.getElementById("btn");
+    btn.onclick = function(){
+        var dateValue = date.value;
+        var datetype = new Date(dateValue)
+        var day = datetype.getDay()
+        console.log(day)
+    }
+</script>
+</body>
+</html>

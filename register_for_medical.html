@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <!--library  -->
+    <link rel="stylesheet" href="./library/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./library/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./library/jquery/jquery-ui.min.css">
+    <link rel="stylesheet" href="./library/jquery/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="./font/font-style.css">
+    <!-- common css -->
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/header/header.css">
+    <link rel="stylesheet" href="/css/footer/footer.css">
+    <!-- page-css -->
+    <link rel="stylesheet" href="./css/page-css/register_for_medical/register_for_medical.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="container-header">
+        <div class="nav-top">
+            <ul class="nav-list">
+                <li class="nav-link">
+                    <i class="fas fa-phone-volume"></i>
+                    <a href="">Hỗ trợ chuyên môn</a>
+                </li>
+                <li class="nav-link">
+                    <i class="fas fa-phone-volume"></i>
+                    <a href="">Hỗ trợ kỹ thuật</a>
+                </li>
+                <li class="nav-link">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <a href="./login.html">Đăng nhập</a>
+                </li>
+                <li class="nav-link">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <a href="./register.html">Đăng ký</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-menu">
+            <div class="nav-logo">
+                <a href="">
+                    <img src="./image/logo.png" alt="">
+                </a>
+                <div class="nav-logo-info">
+                    <h3 class="name">Phòng khám Bình An</h3>
+                    <p class="slogan">Tiên Phong-Thấu Hiểu-Chuẩn Mực-An Toàn</p>
+                </div>
+            </div>
+            <ul class="nav-menu-list">
+                <li class="nav-menu-list-item active"><a href="">TRANG CHỦ</a></li>
+                <li class="nav-menu-list-item"><a href="">GIỚI THIỆU</a></li>
+                <li class="nav-menu-list-item"><a href="">QUY TRÌNH</a></li>
+                <li class="nav-menu-list-item"><a href="">THÔNG BÁO</a></li>
+                <li class="nav-menu-list-item"><a href="">THẮC MẮC</a></li>
+                <li class="nav-menu-list-item"><a href="">LIÊN HỆ</a></li>
+            </ul>
+        </div>
+    </header>
+    <ul class="breadcrumbs">
+        <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+        <li class="breadcrumb-item active"><a href="#">Đăng ký khám bệnh</a></li>
+    </ul>
+    <div class="page-content">
+        <div class="form-register-container">
+            <h2 class="form-heading">ĐĂNG KÝ KHÁM</h2>
+            <div class="form-content">
+                <div class="section-note">
+                    <div class="info-patient">
+                        <p class="title">ĐOÀN VĂN QUÂN</p>
+                        <p class="info">Địa chỉ: Nguyễn Văn Lượng</p>
+                        <p class="info">Điện thoại : 0859202209</p>
+                    </div>
+
+                    <strong>Lưu ý:</strong>
+                    <br><br>
+                    <p>Lịch hẹn có hiệu lực sau khi có xác nhận chính thức từ Phòng khám Bình An</p>
+                    <p>
+                        Thông tin xác nhận lịch hẹn sẽ được thông báo đến tài khoản của quý khách.
+                        Quý khánh hàng vui lòng cung cấp thông tin chính xác để được phục vụ tốt nhất.
+                    </p>
+                    <p>
+                        Trong trường hợp khẩn cấp hoặc nghi ngờ có các triệu chứng nguy hiểm, quý khách vui lòng ĐẾN
+                        TRỰC TIẾP Phòng khám hoặc các trung tâm y tế gần nhất để kịp thời xử lý.
+                    </p>
+                </div>
+                <form class="section-form" id="formRegister">
+                    <div class="form-title-container">
+                        <p class="form-title">Đăng ký khám</p>
+                        <p class="form-note">
+                            Vui lòng điền thông tin vào form bên dưới để đăng ký khám bệnh theo yêu cầu
+                        </p>
+                    </div>
+                    <p class="date-description">Chọn ngày khám</p>
+                    <div class="form-group">
+                        <div id="datepicker"></div>
+                        <input type="hidden" id="registerMedicalDate" name="datetest">
+                    </div>
+                    <div class="form-group choose-department" id="choose-department">
+                        <select class="form-input" id="department" name="departmentId">
+                        </select>
+                    </div>
+                    <div class="form-group choose-department" id="choose-doctor">
+                        <select class="form-input" id="doctor" name="doctorId">
+                        </select>
+                    </div>
+                    <div class="form-group choose-session" id="choose-session">
+                        <select class="form-input" id="session" name="session">
+                            <option value="">Chọn Buổi khám</option>
+                            <option value="Sáng">Sáng</option>
+                            <option value="Chiều">Chiều</option>
+                        </select>
+                    </div>
+                    <div class="form-group symptom" id="symptom">
+                        <textarea class="form-input form-text-area" id="symptom-input" placeholder="Triệu chứng" rows="5"
+                            cols="20" name="symptom"></textarea>
+                    </div>
+                    <input type="hidden" id="doctorName" name="doctorName">
+                    <input type="hidden" id="departmentName" name="departmentName">
+                        <span class="text-danger" id="message"></span>
+                    <div class="form-btn">
+                        <button type="button" class="btn btn-register" id="btnConfirmInfo">XÁC NHẬN THÔNG TIN</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="modalConfirm" class="modal fade" role="dialog">
+        <div class="modal-dialog form-modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                <p class="confirm-heading">Xác nhận đăng ký</p>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body modal-confirm-body" id="modalConfirmBody">
+            </div>
+            <div class="modal-footer text-center">
+                <button type="button" class="btn btn-primary" id="btnConfirm">
+                    Xác nhận</button>
+                <a href="" class="btn btn-danger">Huỷ</a>
+            </div>
+          </div>
+      
+        </div>
+    </div>
+    <div id="modalNotifi" class="modal fade" role="dialog">
+        <div class="modal-dialog form-modal-dialog">
+          <div class="modal-content">
+              <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <div class="text-notifi">
+
+                  </div>
+                </div>
+            <div class="modal-footer text-center">
+                <a href="" class="back-to-list">
+                    <i class="fas fa-link"></i>
+                    Quay lại trang chủ</a>
+            </div>
+          </div>
+      
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="container-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="./image/logo.png" alt="">
+                <div class="footer-logo-info">
+                    <h3 class="name">Phòng khám Bình An</h3>
+                    <p>Địa chỉ: Đại Học Công Nghiệp TP.HCM</p>
+                    <p>SĐT:0123456789</p>
+                </div>
+            </div>
+            <ul class="footer-menu-list">
+                <li class="footer-list-item"><a href="">Trang chủ</a></li>
+                <li class="footer-list-item"><a href="">Giới thiệu</a></li>
+                <li class="footer-list-item"><a href="">Quy trình</a></li>
+                <li class="footer-list-item"><a href="">Thông báo</a></li>
+                <li class="footer-list-item"><a href="">Thắc mắc</a></li>
+                <li class="footer-list-item"><a href="">Liên hệ</a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+    <!-- library -->
+    <script src="./library/jquery/jquery.min.js"></script>
+    <script src="./library/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./library/jquery/jquery-ui.min.js"></script>
+    <!-- page js -->
+    <script src="./js/pageComponent/register-for-medical/register-for-medical.js"></script> 
+
+    <script>
+        var name = "Đoàn Văn Quân"
+        var cmnd ="241812552"
+    </script>
+</body>
+
+</html>

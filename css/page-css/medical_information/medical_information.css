@@ -1,0 +1,46 @@
+.page-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 5px 0;
+    border-bottom: 1px dotted #307be7;;
+    color: var(--primary-color);
+}
+.page-header img{
+    width: 100px;
+}
+.page-content{
+    width: 100%;
+    background: #f1f4f6;
+    padding: 40px 0;
+}
+.page-heading{
+    text-align: center;
+}
+.line-down{
+    width: 100px;
+    height: 3px;
+    margin: 0 auto;
+    background-color:#307BE7;
+    margin-bottom: 30px;
+}
+.medical-information-container{
+    width: 800px;
+    padding: 10px 100px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.user-info{
+    font-size: 16px;
+}
+.user-info-group{
+    display: flex;
+
+}
+.user-info-group .user-info{
+    width: 400px;
+}
+.title{
+    text-align: center;
+}

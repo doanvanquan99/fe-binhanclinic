@@ -1,0 +1,131 @@
+.page-content {
+    width: 100%;
+    background: #f1f4f6;
+}
+
+.user-profile-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px 10px;
+    display: flex;
+}
+
+.user-profile-container .section-menu {
+    width: 20%;
+    padding-right: 30px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.user-profile-container .name-user {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.user-profile-container .menu-list-item>a {
+    display: block;
+    font-size: 14px;
+    color: #4d4d4d;
+    padding: 8px 6px;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.user-profile-container .menu-list-item .icon-right::before {
+    display: none;
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    right: 8px;
+}
+
+.user-profile-container .menu-list-item:hover>a {
+    background: #e4e7eb;
+    color: #307be7;
+}
+
+.user-profile-container .menu-list-item:hover .icon-right::before {
+    display: block;
+}
+
+.user-profile-container .section-medical {
+    width: 75%;
+    padding: 0 20px;
+}
+
+.box-add-medical-record {
+    display: block;
+    color: #696969;
+    background-color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0.5px dotted #696969;
+}
+
+.box-add-medical-record:hover {
+    text-decoration: none;
+}
+
+.medical-content {
+    margin-top: 20px;
+    padding: 20px 30px;
+    background-color: #fff;
+    color: #696969;
+    position: relative;
+    height: 160px;
+    overflow: hidden;
+}
+.medical-content.view{
+    height: auto;
+}
+.medical-content .name {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #4d4d4d;
+    font-size: 14px;
+}
+
+.medical-content .medical-info {
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+}
+
+.btn-notifi {
+    position: absolute;
+    right: 100px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4d4d4d;
+    text-decoration: none;
+    color: red;
+}
+.btn-view-container{
+    position: absolute;
+    right: 20px;
+    font-size: 14px;
+    color: #4d4d4d;
+    text-decoration: none;
+    cursor: pointer; 
+}
+.btn-view-container:hover {
+   color: #307be7;
+}
+.qr-img{
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    right: 40px;
+    top: 50px;
+    cursor: pointer;
+}
